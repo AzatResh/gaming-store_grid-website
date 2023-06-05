@@ -1,68 +1,104 @@
-@charset "UTF-8";
-/* line 11, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
 *, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* line 16, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
 html {
   font-size: 62.5%;
 }
 
-/* line 19, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #F5F5F5;
+  background-color: #F5F5F5;
   line-height: 113%;
   font-size: 1.6rem;
+  color: #425844;
 }
 
-/* line 26, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [main-end];
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_cards.sass */
+.title-1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.title-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.title-3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #425844;
+}
+.title-3_white {
+  color: white;
+}
+.title-3_green-light {
+  color: #61A568;
+}
+
 .cards {
   background: #F5F5F5;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_header.sass */
 .header {
   background: #101D2C;
-  grid-column: main-start/ col-end 6;
+  grid-column: main-start/col-end 6;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_features.sass */
 .features {
+  padding: 15rem 0;
   background: #F5F5F5;
   grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 3rem 4rem;
+  align-items: start;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_gamers.sass */
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  grid-gap: 1.5rem 2.5rem;
+}
+.feature__icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  grid-row: 1/span 2;
+  transform: translateY(-1rem);
+}
+.feature__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 113%;
+  color: #425844;
+}
+
 .gamers {
   background: #101D2C;
   grid-column: col-start 7/main-end;
 }
 
-/* line 2, ../курсы/проекты/Project-store-game/src/sass/layout/_banner.sass */
 .banner-img {
   background: #101D2C;
   grid-column: main-start/col-end 4;
 }
-
-/* line 5, ../курсы/проекты/Project-store-game/src/sass/layout/_banner.sass */
 .banner-text {
   background: #101D2C;
   grid-column: col-start 5/main-end;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_sidebar.sass */
 .sidebar {
   background: #425844;
   height: 100%;
@@ -70,16 +106,12 @@ body {
   grid-row: 1/-1;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_gallery.sass */
 .gallery {
   background: #101D2C;
   grid-column: main-start/main-end;
 }
 
-/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_footer.sass */
 .footer {
   background: #101D2C;
   grid-column: main-start/main-end;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
