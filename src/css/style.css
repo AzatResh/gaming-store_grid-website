@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* line 11, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 16, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 19, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #F5F5F5;
+  line-height: 113%;
+  font-size: 1.6rem;
+}
+
+/* line 26, ../курсы/проекты/Project-store-game/src/sass/base/_base.sass */
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [main-end];
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_cards.sass */
+.cards {
+  background: #F5F5F5;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_header.sass */
+.header {
+  background: #101D2C;
+  grid-column: main-start/ col-end 6;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_features.sass */
+.features {
+  background: #F5F5F5;
+  grid-column: center-start/center-end;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_gamers.sass */
+.gamers {
+  background: #101D2C;
+  grid-column: col-start 7/main-end;
+}
+
+/* line 2, ../курсы/проекты/Project-store-game/src/sass/layout/_banner.sass */
+.banner-img {
+  background: #101D2C;
+  grid-column: main-start/col-end 4;
+}
+
+/* line 5, ../курсы/проекты/Project-store-game/src/sass/layout/_banner.sass */
+.banner-text {
+  background: #101D2C;
+  grid-column: col-start 5/main-end;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_sidebar.sass */
+.sidebar {
+  background: #425844;
+  height: 100%;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_gallery.sass */
+.gallery {
+  background: #101D2C;
+  grid-column: main-start/main-end;
+}
+
+/* line 1, ../курсы/проекты/Project-store-game/src/sass/layout/_footer.sass */
+.footer {
+  background: #101D2C;
+  grid-column: main-start/main-end;
+}
+
+/*# sourceMappingURL=style.css.map */

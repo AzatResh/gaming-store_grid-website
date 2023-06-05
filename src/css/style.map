@@ -1,0 +1,32 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass",
+		"../sass/base/_base.sass",
+		"../sass/base/_typography.sass",
+		"../sass/layout/_cards.sass",
+		"../sass/layout/_header.sass",
+		"../sass/layout/_features.sass",
+		"../sass/layout/_gamers.sass",
+		"../sass/layout/_banner.sass",
+		"../sass/layout/_sidebar.sass",
+		"../sass/layout/_gallery.sass",
+		"../sass/layout/_footer.sass"
+	],
+	"sourcesContent": [
+		"@import \"base/base.sass\";\n@import \"base/typography.sass\";\n@import \"layout/cards.sass\";\n@import \"layout/header.sass\";\n@import \"layout/features.sass\";\n@import \"layout/gamers.sass\";\n@import \"layout/banner.sass\";\n@import \"layout/sidebar.sass\";\n@import \"layout/gallery.sass\";\n@import \"layout/footer.sass\";\n\n",
+		"$color-green-dark: #425844;\n$color-green-light: #61A568;\n\n$color-blue-dark: #101D2C;\n\n$color-gray-dark: #AAAAAA;\n$color-gray-light: #F5F5F5;\n\n\n\n*, ::after, ::before {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box; }\n\nhtml {\n    font-size: 62.5%; }\n\nbody {\n    font-family: \"Montserrat\", sans-serif;\n    font-weight: 400;\n    color: $color-gray-light;\n    line-height: 113%;\n    font-size: 1.6rem; }\n\n.container {\n    display: grid;\n    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);\n    grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)  [main-end]; }\n",
+		"",
+		".cards {\n    background: $color-gray-light; }\n",
+		".header {\n    background: $color-blue-dark;\n    grid-column: main-start/ col-end 6; }\n",
+		".features {\n    background: $color-gray-light;\n    grid-column: center-start/center-end; }\n",
+		".gamers {\n    background: $color-blue-dark;\n    grid-column: col-start 7/main-end; }\n",
+		".banner {\n    &-img {\n        background: $color-blue-dark;\n        grid-column: main-start/col-end 4; }\n    &-text {\n        background: $color-blue-dark;\n        grid-column: col-start 5/main-end; } }\n",
+		".sidebar {\n    background: $color-green-dark;\n    height: 100%;\n    grid-column: sidebar-start/sidebar-end;\n    grid-row: 1/-1; }\n",
+		".gallery {\n    background: $color-blue-dark;\n    grid-column: main-start/main-end; }\n",
+		".footer {\n    background: $color-blue-dark;\n    grid-column: main-start/main-end; }\n"
+	],
+	"names": [],
+	"mappings": ";;ACUA,AAAA,CAAC,EAAE,OAAO,EAAE,QAAQ,CAAC;EACjB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CAAG;;;AAE7B,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,KAAK;CAAG;;;AAEvB,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;EACrC,WAAW,EAAE,GAAG;EAChB,KAAK,EAfU,OAAO;EAgBtB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,MAAM;CAAG;;;AAExB,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,IAAI,CAAC,WAAW,CAAC,IAAI,CAAC,sBAAsB;EAChE,qBAAqB,GAAG,aAAa,EAAE,IAAI,EAAE,WAAW,CAAC,UAAU,EAAE,iBAAiB,EAAE,YAAY,EAAE,2DAA2D,EAAE,UAAU,EAAE,iBAAiB,EAAG,QAAQ;CAAI;;;AE5BnN,AAAA,MAAM,CAAC;EACH,UAAU,EFKK,OAAO;CELU;;;ACDpC,AAAA,OAAO,CAAC;EACJ,UAAU,EHEI,OAAO;EGDrB,WAAW,EAAE,qBAAqB;CAAG;;;ACFzC,AAAA,SAAS,CAAC;EACN,UAAU,EJKK,OAAO;EIJtB,WAAW,EAAE,uBAAuB;CAAG;;;ACF3C,AAAA,OAAO,CAAC;EACJ,UAAU,ELEI,OAAO;EKDrB,WAAW,EAAE,oBAAoB;CAAG;;;ACDnC,AAAD,WAAK,CAAC;EACF,UAAU,ENCA,OAAO;EMAjB,WAAW,EAAE,oBAAoB;CAAG;;;AACvC,AAAD,YAAM,CAAC;EACH,UAAU,ENFA,OAAO;EMGjB,WAAW,EAAE,oBAAoB;CAAG;;;ACN5C,AAAA,QAAQ,CAAC;EACL,UAAU,EPDK,OAAO;EOEtB,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,yBAAyB;EACtC,QAAQ,EAAE,IAAI;CAAG;;;ACJrB,AAAA,QAAQ,CAAC;EACL,UAAU,EREI,OAAO;EQDrB,WAAW,EAAE,mBAAmB;CAAG;;;ACFvC,AAAA,OAAO,CAAC;EACJ,UAAU,ETEI,OAAO;ESDrB,WAAW,EAAE,mBAAmB;CAAG"
+}
