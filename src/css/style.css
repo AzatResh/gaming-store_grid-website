@@ -14,7 +14,7 @@ body {
   background-color: #F5F5F5;
   line-height: 113%;
   font-size: 1.6rem;
-  color: #425844;
+  color: #F5F5F5;
 }
 
 .container {
@@ -33,6 +33,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: #F5F5F5;
+  line-height: 100%;
 }
 
 .title-3 {
@@ -45,6 +46,16 @@ body {
 }
 .title-3_green-light {
   color: #61A568;
+}
+
+.title-4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #425844;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 3rem;
 }
 
 .cards {
@@ -97,6 +108,13 @@ body {
 .banner-text {
   background: #101D2C;
   grid-column: col-start 5/main-end;
+  display: grid;
+  align-content: center;
+  padding: 0 4vw;
+  justify-items: start;
+}
+.banner-text__text {
+  margin-bottom: 4rem;
 }
 
 .sidebar {
@@ -114,4 +132,18 @@ body {
 .footer {
   background: #101D2C;
   grid-column: main-start/main-end;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  background: #61A568;
+  border: 0;
+  padding: 1.5rem 3rem;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background: #425844;
 }/*# sourceMappingURL=style.css.map */
