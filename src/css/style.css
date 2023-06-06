@@ -116,6 +116,15 @@ body {
   grid-column: main-start/col-end 6;
 }
 
+.logo {
+  display: block;
+  margin-bottom: 8rem;
+}
+.logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
 .features {
   padding: 15rem 0;
   background: #F5F5F5;
@@ -262,6 +271,31 @@ body {
 .footer {
   background: #101D2C;
   grid-column: main-start/main-end;
+  display: grid;
+  padding: 8rem 0;
+  border-top: solid 0.3rem #F5F5F5;
+}
+
+.nav__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-items: center;
+  grid-gap: 3.6rem 0;
+}
+.nav__link:link, .nav__link:visited {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
+  display: inline-block;
+}
+.nav__link:hover, .nav__link:active {
+  color: #425844;
+  transform: translateY(-0.3rem);
 }
 
 .btn {
