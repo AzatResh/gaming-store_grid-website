@@ -3,3 +3,24 @@
     height: 100%
     grid-column: sidebar-start/sidebar-end
     grid-row: 1/-1
+    padding-top: 5rem
+    display: flex
+    justify-content: center
+
+.hamburger
+    position: fixed
+    border: none
+    background: $color-gray-light
+    height: 0.2rem
+    width: 4.4rem
+    &::before, &::after
+        content: ""
+        background: $color-gray-light
+        display: block
+        height: 0.2rem
+        width: 4.4rem
+
+    &::before
+        transform: translateY(-1.5rem)
+    &::after
+        transform: translateY(1.5rem)

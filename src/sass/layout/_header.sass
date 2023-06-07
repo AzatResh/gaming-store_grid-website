@@ -1,6 +1,33 @@
 .header
-    background: $color-blue-dark
+    background: linear-gradient(0deg, rgba($color-blue-dark, 0.7), rgba($color-blue-dark, 0.7)),  url("../img/header-bg.jpg") center/cover no-repeat 
     grid-column: main-start/ col-end 6
+    display: grid
+    grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
+    padding: 5rem 2rem 5rem 6rem
+    &__line-text
+        font-size: 1.6rem
+        color: $color-gray-dark
+        font-weight: 700
+        display: grid
+        grid-template-columns: 1fr max-content 1fr 
+        grid-column-gap: 2rem
+        align-items: center
+        margin-bottom: 1.3rem
+        &::before, &::after
+            content: ""
+            height: .1rem
+            display: block
+            background: $color-gray-dark
+    &__img
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        img
+            height: 2.5rem
+            filter: brightness(70%)
+    &__btn
+        justify-self: start
+        align-self: start
 
 .logo
     display: block
