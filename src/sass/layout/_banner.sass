@@ -6,15 +6,24 @@
         grid-template-columns: repeat(16, 1fr)
         grid-template-rows: repeat(24, 1fr)
         background: url(../img/banner-1.png) center/cover no-repeat
+        @include respond(tab-port)
+            grid-column: 1/-1
+
         &__img-1
             width: 100%
             grid-column: 3/15
             grid-row: 3/12
+            @include respond(tab-port)
+                grid-row: 3/10
+                grid-column: 2/12
         &__img-2
             width: 100%
             grid-column: 5/-1
             grid-row: 10/23
             transform: translateX(3.5rem)
+            @include respond(tab-port)
+                grid-row: 10/20
+                grid-column: 4/15
 
     &-text
         background: $color-blue-dark
@@ -27,5 +36,13 @@
         align-content: center
         padding: 0 4vw
         justify-items: start
+        @include respond(tab-port)
+            grid-column: 1/-1
+            grid-row: 5/6
+            padding: 0 4vw
+        @include respond(tab-land)
+            padding: 0 2vw 0 6vw
         &__text
             margin-bottom: 4rem
+            @include respond(tab-port)
+                margin-bottom: 2rem

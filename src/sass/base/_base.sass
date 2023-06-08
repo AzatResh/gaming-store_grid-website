@@ -16,6 +16,19 @@ $color-gray-light: #F5F5F5
 html
     font-size: 62.5%
 
+html
+    font-size: 80%
+    @include respond(big-screen)
+        font-size: 70%
+    @include respond(normal-screen)
+        font-size: 62.5%
+    @include respond(tab-land)
+        font-size: 50%
+    @include respond(tab-port)
+        font-size: 42%
+    @include respond(phone)
+        font-size: 30%
+
 body
     font-family: "Montserrat", sans-serif
     font-weight: 400
@@ -28,3 +41,8 @@ body
     display: grid
     grid-template-rows: 65rem min-content 40vw repeat(3, min-content)
     grid-template-columns: [sidebar-start] 8rem [sidebar-end main-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)  [main-end]
+    @include respond(tab-land)
+        grid-template-rows: 6rem 65rem min-content 40vw repeat(3, min-content)
+        grid-template-columns: [main-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)  [main-end]
+    @include respond(tab-port)
+        grid-template-rows: 6rem 65rem min-content min-content 30vw 82vw repeat(3, min-content)

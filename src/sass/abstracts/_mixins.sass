@@ -1,0 +1,16 @@
+@mixin respond($screenType)
+    @if $screenType == phone 
+        @media(max-width: 480px)
+            @content
+    @if $screenType == tab-port 
+        @media(max-width: 830px)
+            @content
+    @if $screenType == tab-land 
+        @media(max-width: 1240px)
+            @content
+    @if $screenType == normal-screen
+        @media(max-width: 1440px)
+            @content
+    @if $screenType == big-screen 
+        @media(max-width: 1800px)
+            @content

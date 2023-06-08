@@ -4,6 +4,8 @@
     display: grid
     grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
     padding: 5rem 2rem 5rem 6rem
+    @include respond(tab-port)
+        grid-column: main-start/ main-end
     &__line-text
         font-size: 1.6rem
         color: $color-gray-dark

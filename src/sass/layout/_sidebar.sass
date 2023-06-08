@@ -6,6 +6,11 @@
     padding-top: 5rem
     display: flex
     justify-content: center
+    @include respond(tab-land)
+        grid-column: 1/-1
+        grid-row: 1/2
+        padding: 2.8rem 2rem 0 0
+        justify-content: right
 
 .hamburger
     position: fixed
@@ -19,6 +24,8 @@
         display: block
         height: 0.2rem
         width: 4.4rem
+    @include respond(tab-land)
+        position: relative
 
     &::before
         transform: translateY(-1.5rem)
